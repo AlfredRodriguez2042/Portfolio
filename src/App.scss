@@ -168,7 +168,13 @@ $easeOutCubic: cubic-bezier(0.215, 0.61, 0.355, 1);
     transform: translateY(100.5%);
   }
 }
-
+.banner-subtitle {
+  line-height: 1em;
+  font-size: 1.2em;
+  @media screen and (min-width: 750px) {
+    font-size: 2em;
+  }
+}
 .p-introduction {
   width: 100%;
   height: 100vh;
@@ -185,20 +191,25 @@ $easeOutCubic: cubic-bezier(0.215, 0.61, 0.355, 1);
     justify-content: center;
   }
   &__link {
-    width: 18px;
+    width: 25px;
     height: 18px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     opacity: 1;
-    //transform: scale(1.8);
+    transform: scale(1);
     margin: 0 12px;
     transition-property: opacity, transform;
+    @media screen and (min-width: 750px) {
+      transform: scale(1.8);
+      width: 70px;
+      padding-top: 50px;
+    }
     svg {
       width: 18px;
     }
     &.is-shown {
-      transform: scale(1);
+      // transform: scale(1);
       transition-duration: 1s;
       transition-timing-function: $easeOutCubic;
       @for $i from 0 through 4 {

@@ -21,8 +21,9 @@ const Banner = () => {
           </Text>
         </Block>
         <Block factor={1.0}>
-          <Dom position={[mobile ? -w / 2.1 : -w / 6.1, -w * 0.08 + 0.25, -1]}>
-            Alfredo Rodriguez Garcia{mobile ? <br /> : " "}
+          <Dom position={[mobile ? -w / 2.1 : -w / 4.6, -w * 0.08 + 0.05, -1]}>
+            <h1 className="banner-subtitle"> Alfredo Rodriguez Garcia</h1>
+            {mobile ? <br /> : " "}
             <SocialMedia />
           </Dom>
         </Block>
