@@ -32,7 +32,7 @@ function useBlock() {
   const viewportHeight = viewport.height
   const canvasWidth = viewportWidth / zoom
   const canvasHeight = viewportHeight / zoom
-  const mobile = size < 700
+  const mobile = size.width < 700
   const margin = canvasWidth * (mobile ? 0.2 : 0.1)
   const contentMaxWidth = canvasWidth * (mobile ? 0.8 : 0.6)
   const sectionHeight = canvasHeight * ((pages - 1) / (sections - 1))
