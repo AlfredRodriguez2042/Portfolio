@@ -5,9 +5,7 @@ import Content from "./Components/Content"
 import state from "./data"
 import Plane from "./Components/plane"
 import Banner from "./Components/Banner"
-import Loader from "./Components/Loader"
 import Porfolio from "./Components/Portfolio"
-import SocialMedia from "./Components/SocialMedia"
 
 function Startup() {
   const ref = useRef()

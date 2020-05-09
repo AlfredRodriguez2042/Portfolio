@@ -3,9 +3,9 @@ import React from "react"
 const SocialMedia = () => {
   return (
     <>
-      <div class="p-introduction__links">
+      <div className="p-introduction__links">
         <a
-          class="p-introduction__link  is-show"
+          className="p-introduction__link  is-show"
           href="https://github.com/AlfredRodriguez2042"
           target="_blank"
           rel="noopener noreferrer"
@@ -18,7 +18,7 @@ const SocialMedia = () => {
           </svg>
         </a>
         <a
-          class="p-introduction__link  is-show"
+          className="p-introduction__link  is-show"
           href="h"
           target="_blank"
           rel="noopener noreferrer"
@@ -31,7 +31,7 @@ const SocialMedia = () => {
           </svg>
         </a>
         <a
-          class="p-introduction__link  is-show"
+          className="p-introduction__link  is-show"
           href="mailto:alfred2042@hotmail.com"
           rel="noopener noreferrer"
         >
@@ -43,10 +43,10 @@ const SocialMedia = () => {
           </svg>
         </a>
       </div>
-      <div class="p-introduction__follow ">
-        <div class="p-introduction__follow-in p-introduction__follow-in--1"></div>
-        <div class="p-introduction__follow-in p-introduction__follow-in--2"></div>
-        <div class="p-introduction__follow-in p-introduction__follow-in--3"></div>
+      <div className="p-introduction__follow ">
+        <div className="p-introduction__follow-in p-introduction__follow-in--1"></div>
+        <div className="p-introduction__follow-in p-introduction__follow-in--2"></div>
+        <div className="p-introduction__follow-in p-introduction__follow-in--3"></div>
       </div>
     </>
   )

@@ -1,6 +1,5 @@
 {
   "name": "porfolio",
-  "homepage": "https://github.com/AlfredRodriguez2042/Portfolio.git",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

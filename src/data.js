@@ -34,8 +34,8 @@ const state = {
     },
   ],
   stripes: [
-    { offset: 0, color: "#000", height: 15.1 },
-    { offset: 6.3, color: "#000", height: 15 },
+    { offset: 0, color: "#000", height: 21 },
+    { offset: 6.3, color: "#000", height: 18 },
   ],
 
   top: createRef(),

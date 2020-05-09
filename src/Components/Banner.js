@@ -3,7 +3,7 @@ import { Block, useBlock } from "./blocks"
 import { Text } from "./Text"
 import { Dom } from "react-three-fiber"
 import SocialMedia from "./SocialMedia"
-
+// -w / 6.1
 const Banner = () => {
   const { contentMaxWidth: w, mobile } = useBlock()
 
@@ -13,7 +13,7 @@ const Banner = () => {
         <Block factor={1.2}>
           <Text
             left
-            size={w * 0.08}
+            size={mobile ? w * 0.1 : w * 0.08}
             position={[-w / 3.2, 0.5, -1]}
             color="#d40749"
           >
@@ -21,7 +21,7 @@ const Banner = () => {
           </Text>
         </Block>
         <Block factor={1.0}>
-          <Dom position={[-w / 6.1, -w * 0.08 + 0.25, -1]}>
+          <Dom position={[mobile ? -w / 2.1 : -w / 6.1, -w * 0.08 + 0.25, -1]}>
             Alfredo Rodriguez Garcia{mobile ? <br /> : " "}
             <SocialMedia />
           </Dom>
