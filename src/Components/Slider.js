@@ -29,18 +29,16 @@ const Slider = () => {
     []
   )
   return transitions.map(({ item, props, key }) => (
-    <div>
-      <animated.div
-        key={key}
-        className="bg"
-        style={{
-          ...props,
-          backgroundImage: `url(${item.url})`,
-        }}
-      >
-        {/* <div>{item.id}</div> */}
-      </animated.div>
-    </div>
+    <animated.div
+      key={key}
+      className="bg"
+      style={{
+        ...props,
+        backgroundImage: `url(${item.url})`,
+      }}
+    >
+      {/* <div>{item.id}</div> */}
+    </animated.div>
   ))
 }
 export default Slider
