@@ -44,7 +44,7 @@ const Content = () => {
           />
         </Block>
       ))}
-      <Block factor={1.25} offset={8}>
+      <Block factor={1.25} offset={5}>
         <Dom
           className="bottom-left"
           position={[-canvasWidth / 2, -canvasHeight / 2, 0]}
