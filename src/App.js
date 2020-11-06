@@ -1,14 +1,14 @@
-import React, { Suspense, useRef, useEffect } from "react"
-import lerp from "lerp"
-import { Canvas, Dom, useFrame } from "react-three-fiber"
-import Content from "./Components/Content"
-import state from "./data"
-import Plane from "./Components/plane"
-import Banner from "./Components/Banner"
-import Porfolio from "./Components/Portfolio"
-
+import React, { Suspense, useRef, useEffect } from "react";
+import lerp from "lerp";
+import { Canvas, Dom, useFrame } from "react-three-fiber";
+import Content from "./Components/Content";
+import state from "./data";
+import Plane from "./Components/plane";
+import Banner from "./Components/Banner";
+import Porfolio from "./Components/Portfolio";
+import Cube from "./Components/Cube";
 function Startup() {
-  const ref = useRef()
+  const ref = useRef();
   useFrame(
     () =>
       (ref.current.material.opacity = lerp(
@@ -16,7 +16,7 @@ function Startup() {
         0,
         0.025
       ))
-  )
+  );
   return (
     <Plane
       ref={ref}
@@ -24,18 +24,18 @@ function Startup() {
       position={[0, 0, 200]}
       scale={[100, 100, 1]}
     />
-  )
+  );
 }
 
 function App() {
-  const scrollArea = useRef()
+  const scrollArea = useRef();
 
   const onScroll = (e) => {
-    state.top.current = e.target.scrollTop
-  }
+    state.top.current = e.target.scrollTop;
+  };
   useEffect(() => {
-    onScroll({ target: scrollArea.current })
-  }, [])
+    onScroll({ target: scrollArea.current });
+  }, []);
 
   return (
     <>
@@ -50,6 +50,7 @@ function App() {
         >
           <Banner />
           <Content />
+          <Cube />
           <Startup />
           <Porfolio />
         </Suspense>
@@ -65,7 +66,7 @@ function App() {
         ))}
       </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
